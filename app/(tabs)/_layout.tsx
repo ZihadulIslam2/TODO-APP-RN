@@ -2,17 +2,19 @@ import FontAwesome from '@expo/vector-icons/FontAwesome'
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons'
 
 import { Tabs } from 'expo-router'
+import useTheme from '../hooks/useTheme'
 
 export default function TabLayout() {
+  const { colors } = useTheme()
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: 'red',
-        tabBarInactiveTintColor: 'green',
+        tabBarActiveTintColor: colors.primary,
+        tabBarInactiveTintColor: colors.textMuted,
         tabBarStyle: {
-          backgroundColor: '#1e293b',
+          backgroundColor: colors.surface,
           borderTopWidth: 1,
-          borderTopColor: 'yellow',
+          borderTopColor: colors.border,
           height: 90,
           paddingBottom: 20,
           paddingTop: 10,
