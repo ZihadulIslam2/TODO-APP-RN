@@ -2,7 +2,7 @@ import FontAwesome from '@expo/vector-icons/FontAwesome'
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons'
 
 import { Tabs } from 'expo-router'
-import useTheme from '../hooks/useTheme'
+import useTheme from '../../hooks/useTheme'
 
 export default function TabLayout() {
   const { colors } = useTheme()
